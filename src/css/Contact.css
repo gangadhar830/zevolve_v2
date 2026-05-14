@@ -1,0 +1,121 @@
+.contact-section {
+  background: linear-gradient(135deg, #f8f5ff, #f2ebff);
+  padding: 100px 8%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  background: white;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(98, 0, 255, 0.08);
+}
+
+/* LEFT */
+.contact-left {
+  padding: 50px;
+  background: linear-gradient(180deg, #ffffff, #faf7ff);
+}
+
+.contact-left img {
+  width: 20%;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  object-fit: cover;
+}
+
+.contact-left h2 {
+  font-size: 3rem;
+  color: #6d28d9;
+  margin-bottom: 16px;
+}
+
+.contact-left p {
+  color: #555;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.contact-info {
+  margin-top: 40px;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+  font-weight: 500;
+  color: #222;
+}
+
+/* RIGHT */
+.contact-right {
+  padding: 60px;
+  background: #0f0a19;
+  color: white;
+}
+
+.contact-right h3 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #d8b4fe;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-right input,
+.contact-right textarea {
+  padding: 18px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.05);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+.contact-right textarea {
+  min-height: 150px;
+  resize: none;
+}
+
+.contact-right input::placeholder,
+.contact-right textarea::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+.contact-right button {
+  margin-top: 10px;
+  padding: 16px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-right button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(168, 85, 247, 0.3);
+}
+
+.contact-right button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(168, 85, 247, 0.3);
+}

@@ -1,0 +1,124 @@
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f6f3ff;
+}
+
+.auth-box {
+  position: relative;
+  width: 900px;
+  height: 550px;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* forms */
+.form-box {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.6s ease-in-out;
+}
+
+.form-box h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #5b21b6;
+}
+
+.form-box input {
+  margin-bottom: 16px;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+}
+
+.form-box button {
+  padding: 14px;
+  border: none;
+  background: #7c3aed;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* login left */
+.login {
+  left: 0;
+}
+
+/* signup right */
+.signup {
+  right: 0;
+}
+
+/* overlay */
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.6s ease-in-out;
+  z-index: 100;
+}
+
+.overlay {
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+  color: white;
+  position: relative;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  transition: 0.6s ease-in-out;
+}
+
+.overlay-panel {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.overlay-panel button {
+  margin-top: 20px;
+  padding: 12px 26px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.left-panel {
+  left: 0;
+}
+
+.right-panel {
+  right: 0;
+}
+
+/* animation states */
+.auth-box.active .overlay-container {
+  transform: translateX(-100%);
+}
+
+.auth-box.active .overlay {
+  transform: translateX(50%);
+}
